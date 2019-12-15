@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Login</title>
+</head>
+<body>
+ 
+   
+   <div class="container" id="box">
+       <div class="row" id="col1">
+           <div class="col"></div>
+       </div>
+       <div class="row">
+            <div class="col-md-6 " >
+               <img src="/static/logoo.png" class="img-fluid" id="img">
+            </div>
+           <div class="col-md-6 ">
+    <form class="one" action="/login" method="POST">
+   <fieldset>
+       <legend align="center"><h2>Find Ki(n)d</h2></legend>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username"class="form-control" id="username" >
+    </div>
+    <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password"class="form-control" id="password" >
+        </div>
+        <div class="form-group">
+            <input type="checkbox"  >   Remember me
+        </div>
+        <div class="form-group">
+          <small> To create a new account click here  <a href="{{url_for('register')}}" class="two">Sign up</a></small>
+        </div>
+        <button class="btn btn-primary" id="btn">Submit</button>
+    </fieldset>
+   </form>
+   </div>
+    </div>
+  </div>
+</body>
+</html>

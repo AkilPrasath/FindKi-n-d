@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style3.css">
+    <title>Sign Up</title>
+</head>
+<body>
+ 
+   
+   <div class="container" id="box">
+       <div class="row" id="col1">
+           <div class="col"></div>
+       </div>
+       <div class="row">
+            <div class="col-md-6" >
+               <img src="/static/logoo.png" class="img-fluid" id="img">
+            </div>
+           <div class="col-md-6 ">
+    <form class="one" action="/signup" method="POST">
+   <fieldset>
+       <legend align="center"><h2>Sign Up</h2></legend>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username"class="form-control" id="username" >
+    </div>
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="text" name="email" class="form-control" id="email" >
+    </div>
+    <div class="form-group">
+        <label for="number">Mobile no</label>
+        <input type="text" name="number" class="form-control" id="number" >
+    </div>
+    <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" id="password" >
+        </div>
+        <div class="form-group">
+            <label for="password">Confirm Password</label>
+            <input type="password" name="cpassword" class="form-control" id="password" >
+        </div>
+        
+        <button class="btn btn-primary" type="submit" id="btn">Submit</button>
+    </fieldset>
+   </form>
+   </div>
+    </div>
+  </div>
+</body>
+</html>

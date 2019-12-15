@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+        <title>MISSING</title>
+</head>
+<body>
+  <div class="responsive">
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/">FIND KI(N)D</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="/post">Missing</a>
+              <a class="nav-item nav-link" href="/post_found">Found</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/logout">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+        <p> The International Labor Organization estimates that, ”Out of 20.9 million people who are trafficked in the world (for all types of work) 5.5 million are children”. Our project is about developing a Web application which helps people in finding their missing children and also helps in reducing the rate of child trafficking. The users of our application are registered and verified (through any government id’s) for security purposes. The unverified accounts can post in the “Found” section. Our application has two segments consisting of the ‘missing’  and the ‘found’. The “Missing” segment  contains all the pictures and the identities of the missing child uploaded by respective guardians. The “Found” section contains all the pictures of children and their last seen locations who were found and photographed by the people. The moment the guardians have uploaded the picture of their missing child, our face recognition module scans all the images of children in the database who are photographed where they’ve been last seen and when it finds a near match of the child, it alerts the respective guardians about the location of the child and the time when they’ve been photographed. Google maps feature is also provided so as to make the guardian’s job easier.For privacy reasons only users with verified accounts will be able to post missing notices and view other missing posts . In addition, a one touch call
+            And chat features are also available if the user has made their phone number public, so that guardians can contact the finders as soon as possible. 
+        </p>
+          <!-- Carousel --> 
+        <div class="col-sm-3">
+
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    
+        </div>
+        </div>
+      </div>
+    </main>
+  </div>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

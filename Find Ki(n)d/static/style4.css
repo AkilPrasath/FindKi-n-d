@@ -1,0 +1,29 @@
+#con
+{
+    width:500px;
+    margin:auto;
+    margin-top:20px;
+}
+
+#buttonone
+{
+    background:#4F428B;
+    border:none;
+    color:white;
+}
+
+@media only screen and (max-width:759px)
+{
+    #con
+    {
+        width:500px;
+    }
+    #buttonone
+    {
+       position:relative;
+       top:25px; 
+       margin:0 100px 70px 100px;
+       width:50%;
+       
+    }
+}

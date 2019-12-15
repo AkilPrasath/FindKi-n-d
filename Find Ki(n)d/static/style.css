@@ -1,0 +1,57 @@
+body{
+  background:#fafafa;
+}
+
+.one
+{
+  margin:auto;
+  width:450px;
+  background: #ffffff;
+  padding:50px 50px 50px 50px;
+  font-size:17px;
+  font-family:Helvetica, sans-serif
+}
+#col1
+{
+  height:150px;
+}
+.two
+ {
+     color:#4F428B;
+ }
+legend
+{
+    color:#4F428B;
+}
+#btn
+{
+    background:#4F428B;
+    border:none;
+    border-radius:10%;
+}
+.navbar-brand img
+{
+  height:80px;;
+  padding-left:10px;
+}
+
+#img
+{
+ 
+  width:80%;
+  padding-bottom:50px;
+}
+@media  only screen and (max-width:759px)
+{
+#col1
+{
+  height:5px;
+}
+#img
+  {
+    margin-left:15%;
+  }
+ body{
+   padding-bottom:50px;
+ }
+}
